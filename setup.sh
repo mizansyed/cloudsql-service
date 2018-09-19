@@ -20,6 +20,8 @@ else
     cp etc/cloudsql/cloudsql.conf /etc/cloudsql/cloudsql.conf
 fi
 
+cd /etc/init.d/
+chmod +x cloudsql
 update-rc.d cloudsql defaults
 
 echo <<EOD
